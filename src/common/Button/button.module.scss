@@ -1,0 +1,15 @@
+@import 'src/styles/_colors.scss';
+
+.button {
+  padding: 10px 20px;
+  color: #ffffff;
+  background: $primary;
+  border-radius: 3px;
+  font-weight: bold;
+  transition-property: background;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background: $secondary;
+  }
+}
