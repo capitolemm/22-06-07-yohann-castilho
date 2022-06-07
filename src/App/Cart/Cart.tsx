@@ -8,6 +8,7 @@ import { clearCart } from 'src/redux/cart/cart.slice';
 
 import cartStyles from './cart.module.scss';
 import Button from 'src/common/Button';
+import { addOrder } from 'src/redux/orders/orders.slice';
 
 const Cart = () => {
   const dispatch = useAppDispatch();
@@ -23,6 +24,7 @@ const Cart = () => {
     );
 
   const handleAddOrder = () => {
+    dispatch(addOrder(cart))
     dispatch(clearCart());
   };
 
